@@ -1,0 +1,252 @@
+.issue {
+  width: 100%;
+  height: 1143px;
+  background-color: $color-goldenrod;
+  overflow: hidden;
+  object-fit: cover;
+  position: relative;
+  .issue__content {
+    .issue__content-bottom {
+      margin: 150px 0px;
+      .content__bottom-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        line-height: $line-height-0;
+        letter-spacing: 1px;
+        text-align: center;
+        .item-1 {
+          width: 20%;
+          height: 480px;
+          background-color: $color-bright-orange;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          position: relative;
+          span {
+            @include styleText($color-black-2, $fs-7, $fw-bold);
+            text-transform: uppercase;
+            width: 200px;
+            margin-bottom: 10px;
+          }
+          .item-img {
+            position: absolute;
+            right: -20px;
+            bottom: -80px;
+            z-index: 2;
+            img {
+              width: 150px;
+              height: 150px;
+            }
+          }
+          .item-arrow {
+            background-color: $color-white-0;
+            border: 8px solid $color-black-2;
+            width: 150px;
+            height: 150px;
+            cursor: pointer;
+            i {
+              font-family: NotoSansCJKkr;
+              font-size: 118px;
+              width: 120px;
+              height: 60px;
+            }
+          }
+        }
+        .item-2 {
+          width: 20%;
+          height: 480px;
+          position: relative;
+          .item-hot {
+            position: absolute;
+            left: 30px;
+            top: -35px;
+            border-radius: 75%;
+            border: 3px solid $color-black-2;
+            width: 130px;
+            height: 70px;
+            z-index: 3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color: $color-bright-orange;
+
+            span {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              width: 70px;
+              height: 30px;
+              text-transform: uppercase;
+              @include styleText($color-black-0, $fs-6, $fw-bold);
+              border-bottom: 1px solid $color-black-1;
+            }
+          }
+          .item-top {
+            height: 30px;
+            padding: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $color-black-0;
+            span {
+              @include styleText($color-white-0, $fs-5, $fw-bold);
+              text-transform: uppercase;
+            }
+          }
+          .item-bottom {
+            img {
+              width: 381px;
+              height: 420px;
+            }
+          }
+        }
+        .item-3 {
+          width: 20%;
+          height: 480px;
+          .item-top {
+            height: 30px;
+            padding: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $color-black-0;
+            span {
+              @include styleText($color-white-0, $fs-5, $fw-bold);
+              text-transform: uppercase;
+            }
+          }
+          .item-bottom {
+            img {
+              width: 380px;
+              height: 420px;
+              object-fit: cover;
+            }
+          }
+        }
+        .item-4 {
+          width: 20%;
+          height: 480px;
+          position: relative;
+          .item-top {
+            height: 30px;
+            padding: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $color-bright-orange;
+            span {
+              @include styleText($color-white-0, $fs-5, $fw-bold);
+              text-transform: uppercase;
+            }
+          }
+          .item-bottom {
+            img {
+              width: 380px;
+              height: 420px;
+              object-fit: cover;
+            }
+          }
+          .item-img {
+            position: absolute;
+            bottom: -60px;
+            right: -30px;
+            img {
+              width: 135px;
+              height: 100px;
+            }
+          }
+        }
+        .item-5 {
+          width: 20%;
+          height: 480px;
+          .item-top {
+            height: 30px;
+            padding: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $color-black-0;
+            span {
+              @include styleText($color-white-0, $fs-5, $fw-bold);
+              text-transform: uppercase;
+            }
+          }
+          .item-bottom {
+            img {
+              width: 380px;
+              height: 420px;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+    }
+    .issue__content-top {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      margin-top: 150px;
+
+      .content__top-item {
+        .item-1 {
+          position: absolute;
+          right: 5%;
+          top: 4%;
+          img {
+            width: 95px;
+            height: 95px;
+          }
+        }
+        .item-2 {
+          position: absolute;
+          right: 5%;
+          top: 16%;
+          img {
+            width: 120px;
+            height: 110px;
+          }
+        }
+      }
+      span {
+        @include styleText($color-black-0, $fs-7, $fw-bold);
+        line-height: 1.4;
+        letter-spacing: 4px;
+        margin-bottom: 20px;
+      }
+      p {
+        width: 710px;
+        height: 45px;
+        text-align: center;
+        @include styleText($color-black-0, $fs-3, $fw-0);
+        line-height: 1.9;
+        margin-bottom: 30px;
+      }
+      button {
+        width: 210px;
+        height: 60px;
+        cursor: pointer;
+        text-transform: uppercase;
+        @include styleButtonShowMore(
+          $color-black-2,
+          $bg-transparent,
+          $pd-4,
+          $pd-5,
+          $border-radius
+        );
+        @include styleText($color-black-0, $fs-3, $fw-bold);
+        transition: all 0.5s ease-in-out;
+        &:hover {
+          @include styleButtonHover(border-0, $color-black-0);
+          color: $color-white-0;
+        }
+      }
+    }
+  }
+}

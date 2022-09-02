@@ -1,0 +1,89 @@
+.productList {
+  margin: 450px 100px 30px 100px;
+  .productList__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 60px;
+    button {
+      width: 210px;
+      height: 60px;
+      @include styleButtonShowMore(
+        $color-black-2,
+        $color-white-0,
+        $pd-4,
+        $pd-5,
+        $border-radius
+      );
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.5s ease-in-out;
+      cursor: pointer;
+      &:hover {
+        @include styleButtonHover(border-0, $color-black-0);
+        span {
+          color: $color-white-0;
+        }
+      }
+
+      span {
+        letter-spacing: 1px;
+        font-family: Montserrat;
+
+        @include styleText($color-black-2, $fs-5, $fw-bold);
+        line-height: $line-height-0;
+      }
+    }
+  }
+  .productList__menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .productList__item {
+      width: 18%;
+      margin: 10px;
+      .productList__item-card {
+        img {
+          transition: all 0.5s;
+          cursor: pointer;
+          &:hover {
+            opacity: 0.5;
+          }
+        }
+        .card__title {
+          @include styleText($color-black-2, $fs-3, $fw-2);
+
+          line-height: normal;
+          letter-spacing: 2px;
+          margin: 20px 0px;
+        }
+        .card__info {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          letter-spacing: 1px;
+          font-family: Montserrat;
+
+          .card__info-left {
+            span {
+              @include styleText($color-black-2, $fs-3, $fw-normal);
+            }
+          }
+
+          .card__info-right {
+            i {
+              color: $color-pumpkin-orange;
+              margin-right: 5px;
+            }
+            span {
+              margin-right: 5px;
+              @include styleText($color-brownish-grey, $fs-3, $fw-normal);
+            }
+          }
+        }
+      }
+    }
+  }
+}

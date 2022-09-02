@@ -1,0 +1,16 @@
+//Helper
+@import "./Helper/variables";
+@import "./Helper/mixins";
+@import "./Helper/animations";
+//Base
+@import "./Base/reset";
+//Components
+@import "./Components/header";
+@import "./Components/carousel";
+@import "./Components/intro";
+@import "./Components/bestseller";
+@import "./Components/productList";
+@import "./Components/brand";
+@import "./Components/issue";
+@import "./Components/story";
+@import "./Components/footer";

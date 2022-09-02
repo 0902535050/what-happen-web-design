@@ -1,0 +1,94 @@
+.bestseller {
+  width: 100%;
+  height: 80vh;
+  font-family: Montserrat;
+  .bestseller__content {
+    position: absolute;
+    left: 0;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    .bestseller__content-top {
+      width: 40%;
+      left: 31%;
+      position: absolute;
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      margin: 50px;
+      p {
+        @include styleText($color-tomato, $fs-4, $fw-1);
+        text-align: center;
+        line-height: $line-height-0;
+        letter-spacing: 1px;
+      }
+      h1 {
+        letter-spacing: 5px;
+        margin-bottom: 30px;
+        @include styleText($color-tomato, $fs-7, $fw-bold);
+      }
+    }
+    .bestseller__content-bottom {
+      position: absolute;
+      top: 33.7%;
+      left: 9%;
+      font-family: Montserrat;
+      .bottom__listItem {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .bottom__listItem-item {
+          .item {
+            position: absolute;
+            top: -50px;
+            z-index: 50;
+            display: block;
+            img {
+              width: 100px;
+              height: 100px;
+              object-fit: cover;
+            }
+            .index {
+              display: block;
+              position: absolute;
+              top: 30px;
+              left: 31px;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+              @include styleText($color-black-2, $fs-6, $fw-bold);
+              border-bottom: 1px solid $color-black-2;
+            }
+            .bottom {
+              display: flex;
+              width: 410px;
+              justify-content: space-between;
+              align-items: center;
+              margin: 426px 12px 0 55px;
+              padding: 10px;
+              border: 3px solid $color-black-2;
+              @include styleText($color-black-2, $fs-5, $fw-bold);
+              background-color: $color-white-0;
+              .go {
+                border-radius: 50%;
+                @include styleText($color-white-0, $fs-5, $fw-bold);
+                background-color: $color-black-2;
+                margin: 0 0 0 81px;
+                padding: 20px 15px;
+                line-height: $line-height-0;
+                letter-spacing: 1px;
+              }
+            }
+          }
+          img {
+            width: 523px;
+            height: 514px;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+}

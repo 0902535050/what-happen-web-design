@@ -1,0 +1,148 @@
+.brand {
+  width: 100%;
+  height: 100vh;
+  background-color: $color-cerulean;
+  position: relative;
+  overflow: hidden;
+  .brand__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    text-align: center;
+    .brand__content-top {
+      position: absolute;
+      top: 15%;
+
+      span {
+        @include styleText($color-sun-yellow, $fs-7, $fw-bold);
+        letter-spacing: 5px;
+        line-height: $line-height-0;
+      }
+      p {
+        width: 750px;
+        height: 45px;
+        line-height: 1.9;
+        margin: 30px 250px 80px 250px;
+        font-family: NotoSansCJKkr;
+        @include styleText($color-sun-yellow, $fs-3, $fw-0);
+        letter-spacing: 1px;
+      }
+    }
+    .brand__content-around {
+      .item-1 {
+        position: absolute;
+        left: 9%;
+        top: 30%;
+        z-index: 1;
+      }
+      .item-2 {
+        position: absolute;
+        right: 15%;
+        top: 10%;
+        img {
+          width: 150px;
+          height: 135px;
+        }
+      }
+      .item-3 {
+        position: absolute;
+        right: 11%;
+        top: 14%;
+      }
+      .item-4 {
+        position: absolute;
+        left: 0;
+        top: 53%;
+      }
+      .item-5 {
+        position: absolute;
+        left: 10%;
+        top: 60.9%;
+        border-bottom: 3px solid $color-black-2;
+      }
+
+      .item-6 {
+        position: absolute;
+        right: -25px;
+        top: 66%;
+        z-index: 1;
+      }
+      .item-7 {
+        position: absolute;
+        right: -100px;
+        top: 30%;
+      }
+    }
+    .brand__content-middle {
+      background-color: $color-black-2;
+      position: absolute;
+      top: 45%;
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .content__middle-top {
+        height: 9px;
+        margin: 10px 5px 5px 5px;
+        border-top: 2px solid $color-cerulean;
+        border-bottom: 2px solid $color-cerulean;
+      }
+      .content__middle-bottom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .content__bottom-left {
+          border: solid 3px $color-black-2;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .content__bottom-right {
+          width: 612px;
+          height: 418px;
+          background-color: $color-white-0;
+          border: solid 3px $color-black-2;
+          text-align: left;
+
+          letter-spacing: 1px;
+          span {
+            display: flex;
+            width: 467px;
+            height: 20px;
+            margin: 30px 30px 60px 30px;
+            line-height: 2.4;
+
+            text-transform: uppercase;
+            @include styleText($color-black-2, $fs-5, $fw-bold);
+          }
+          p {
+            @include styleText($color-black-2, $fs-3, $fw-0);
+            font-family: NotoSansCJKkr;
+            line-height: 1.9;
+            margin: 30px;
+          }
+          button {
+            width: 200px;
+            height: 60px;
+            margin: 10px 325px 0 30px;
+            border: solid 3px $color-black-2;
+            background-color: #fff;
+            text-transform: uppercase;
+            @include styleText($color-black-2, $fs-5, $fw-bold);
+            line-height: $line-height-0;
+            transition: all 0.5s ease-in-out;
+            cursor: pointer;
+            &:hover {
+              @include styleButtonHover(border-0, $color-black-0);
+              color: $color-white-0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
